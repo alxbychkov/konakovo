@@ -3,7 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
     <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/slick-theme.css">
+    <link rel="stylesheet" href="css/slick.css">
     <link rel="stylesheet" href="css/style.css">
     <title>Официальный сайт ЖК «БЕЛЫЙ АИСТ» в Конаково, Тверской области. Акции, цены, планировки, отзывы.</title>
 </head>
@@ -51,13 +54,7 @@
         </section>
         <section class="about_block">
             <div class="container">
-                <div class="row">
-                    <div class="col-12">
-                        <h2>О жилом комплексе</h2>
-                    </div>
-                </div>
-            </div>
-            <div class="container">
+                <h2>О жилом комплексе</h2>
                 <nav class="row">
                   <div class="nav nav-tabs col-12" id="nav-tab" role="tablist">
                     <a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true">Общая информация</a>
@@ -70,17 +67,95 @@
                 <div class="tab-content" id="nav-tabContent">
                   <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab" style="background-image: url(img/back2.webp);">
                     <div class="container">
-
+                        <div class="about-box">
+                            <h3>ЖК «Белый Аист»</h3>
+                            <div class="row about-block">
+                                <div class="col-4 about-item">
+                                    <p class="about_title">Адрес</p>
+                                    <p class="about_text">Тверская область, г.Конаково, ул. Учебная, дом 1А</p>
+                                </div>
+                                <div class="col-4 about-item">
+                                    <p class="about_title">Квартиры</p>
+                                    <p class="about_text">1-комнатные, 2-комнатные, 3-комнатные</p>
+                                </div>
+                                <div class="col-4 about-item">
+                                    <p class="about_title">Парковка</p>
+                                    <p class="about_text">На 100 автомобилей</p>
+                                </div>
+                                <div class="col-4 about-item">
+                                    <p class="about_title">Тип здания</p>
+                                    <p class="about_text">Монолитно-кирпичный</p>
+                                </div>
+                                <div class="col-4 about-item">
+                                    <p class="about_title">Планировка квартир</p>
+                                    <p class="about_text">Свободная</p>
+                                </div>
+                                <div class="col-4 about-item">
+                                    <p class="about_title">Год постройки</p>
+                                    <p class="about_text">2015</p>
+                                </div>
+                                <div class="col-4 about-item">
+                                    <p class="about_title">Высота потолков</p>
+                                    <p class="about_text">2,8 м</p>
+                                </div>
+                                <div class="col-4 about-item">
+                                    <p class="about_title">Телефония</p>
+                                    <p class="about_text">Интернет, телефон</p>
+                                </div>
+                                <div class="col-4 about-item">
+                                    <p class="about_title">Отделка</p>
+                                    <p class="about_text">Черновая</p>
+                                </div>
+                                <div class="col-4 about-item">
+                                    <p class="about_title">Этажность</p>
+                                    <p class="about_text">14 этажей, пассажирские и грузовые лифты</p>
+                                </div>
+                                <div class="col-4 about-item">
+                                    <p class="about_title">Разрешение</p>
+                                    <p class="about_text">Дом сдан в эксплуатацию</p>
+                                </div>
+                            </div>
+                        </div>
                     </div>    
                 </div>
                   <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab" style="background-image: url(img/back3.webp);">
                     <div class="container">
-                        
+                        <div class="about-box">
+                            <h3>Как проехать?</h3>
+                            <div class="row about-block">
+                                <div class="col-6 about-item">
+                                    <p class="about_head">159 км от Москвы:</p>
+                                    <p class="car_text"><img src="icons/car_1.svg"  width="30" alt="icon">1,5 часа на автомобиле</p>
+                                    <p class="car_text"><img src="icons/underground.svg" width="30" alt="icon">2 часа на электричке
+                                    </p>
+                                    <p class="car_text"><img src="icons/bus.svg" width="30" alt="icon">2,5 часа на автобусе</p>
+                                </div>
+                                <div class="col-6 about-item">
+                                    <p class="about_head">77 км от Твери:</p>
+                                    <p class="car_text"><img src="icons/car_1.svg"  width="30" alt="icon">1,5 часа на автомобиле</p>
+                                    <p class="car_text"><img src="icons/underground.svg" width="30" alt="icon">2 часа на электричке
+                                    </p>
+                                    <p class="car_text"><img src="icons/bus.svg"  width="30" alt="icon">2,5 часа на автобусе</p>
+                                </div>
+                            </div>                            
+                        </div>
                     </div>   
                   </div>
                   <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab" style="background-image: url(img/back4.jpg);">
                     <div class="container">
-                        
+                        <div class="about-box">
+                            <h3>Выгодные предложения</h3>
+                            <div class="row about-block">
+                                <div class="col-12 about-item">
+                                    <p class="offer_text"><img src="icons/star_1.svg"  width="16" alt="icon">Возможен ремонт от Застройщика</p>
+                                    <p class="offer_text"><img src="icons/star_1.svg" width="16" alt="icon">Помощь в подготовке и оформлении документов
+                                    </p>
+                                    <p class="offer_text"><img src="icons/star_1.svg" width="16" alt="icon">Любая форма оплаты: <br>
+                                        Ипотека, Маткапитал, Рассрочка, Жилищный сертификат</p>
+                                    <button>Заказать звонок</button>
+                                </div>
+                            </div>
+                        </div>                        
                     </div>   
                   </div>
                 </div>
@@ -103,7 +178,7 @@
                     <div class="advantages-item col-1 col-lg-4 col-md-2">
                         <div class="advantages-item-head">
                             <img src="icons/013-protection.svg" alt="icon">
-                            <p>Дополнительные квадратные метры</p>
+                            <p>Спокойствие, только спокойствие</p>
                         </div>
                         <div class="advantages-item-content">
                             <p>Дом огорожен металлическим забором и въезд на территорию производится через придомовой шлагбаум, что позволит вам не беспокоиться о собственной безопасности и безопасности детей.</p>
@@ -112,7 +187,7 @@
                     <div class="advantages-item col-1 col-lg-4 col-md-2">
                         <div class="advantages-item-head">
                             <img src="icons/tree_1.svg" alt="icon">
-                            <p>Дополнительные квадратные метры</p>
+                            <p>Дышите свежим воздухом</p>
                         </div>
                         <div class="advantages-item-content">
                             <p>Всего лишь 5 минут на автомобиле отделяют дом от Конаковского бора. Это большой сосновый парк-природный заповедник с чистейшим лесным воздухом, где вы сможете насладиться неспешными прогулками по лесу или вдоль набережной Волги, а ваши дети будут рады большой детской площадке посреди леса</p>
@@ -121,7 +196,7 @@
                     <div class="advantages-item col-1 col-lg-4 col-md-2">
                         <div class="advantages-item-head">
                             <img src="icons/gift_1.svg" alt="icon">
-                            <p>Дополнительные квадратные метры</p>
+                            <p>Приятные бонусы</p>
                         </div>
                         <div class="advantages-item-content">
                             <p>При покупке квартиры в жилом комплексе "Белый аист", Вы становитесь членом VIP-клуба элитного коттеджного поселка "Ольгино", расположенного на живописном берегу реки Волги. Всем членам VIP-клуба предоставлено эксклюзивное право пользоваться богатой инфраструктурой коттеджного поселка "Ольгино" на специальных условиях</p>
@@ -130,7 +205,7 @@
                     <div class="advantages-item col-1 col-lg-4 col-md-2">
                         <div class="advantages-item-head">
                             <img src="icons/heart.svg" alt="icon" width="50">
-                            <p>Дополнительные квадратные метры</p>
+                            <p>Здоровье под контролем</p>
                         </div>
                         <div class="advantages-item-content">
                             <p>В городе имеется Многопрофильный Медицинский Центр «Ольгино», в котором предусмотрены детские и взрослые специалисты. Ваше здоровье всегда будет под нашим контролем.</p>
@@ -139,7 +214,7 @@
                     <div class="advantages-item col-1 col-lg-4 col-md-2">
                         <div class="advantages-item-head">
                             <img src="icons/018-garage.svg" alt="icon">
-                            <p>Дополнительные квадратные метры</p>
+                            <p>Паркуйтесь на здоровье</p>
                         </div>
                         <div class="advantages-item-content">
                             <p>На территории предусмотрена парковка для машин на 100 мест. Благодаря этому у вас не возникнет проблем с тем, где разместить автомобиль</p>
@@ -148,12 +223,422 @@
                 </div>
             </div>
         </section>
+        <section class="specials">
+            <div class="container">
+                <h2>Акции и спецпредложения</h2>
+                <div class="row specials-block">
+                    <div class="specials-item col-12">
+                        <p class="p-high">Квартиры в ЖК «Белый аист» <br> с выгодой <span class="red">до 600 000 руб.</span></p>
+                    </div>
+                    <div class="specials-item col-5 _center">
+                        <p>Последняя возможность приобрести квартиру</p>
+                        <p class="p-medium">Дом построен, а квартиры остались. Чтобы быстрее реализовать квартиры, мы снизили цены на ВСЕ квартиры ДО 31.03.2020 г.</p>
+                    </div>
+                    <div class="specials-item col-5 _border">
+                        <p class="p-medium">2-8 этажи</p>
+                        <p>35 000 руб. за 1 квадратный метр!</p>
+                    </div>
+                    <div class="specials-item col-10">
+                        <p class="p-high">Закажите консультацию специалиста, пока действует акция и квартиры с выгодой <span class="red">до 600 000 руб.</span> есть в наличии</p>
+                    </div>
+                    <div class="special-item form col-12">
+                        <form action="" class="send-form">
+                            <input type="text" placeholder="Введите ваше Имя" name="name">
+                            <input type="tel" placeholder="Введите ваш номер" name="phone">
+                            <button type="submit">Заказать консультацию</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="prices" style="background-image: url(img/back6.jpg);">
+            <div class="container">
+                <h2>Цены квартир по этажам</h2>
+                <div class="row">
+                    <div class="prices-item col-12" >
+                        <p class="click"><img src="icons/click_1.svg" width="30" alt="icon">Наведите на этаж дома и узнайте <br> цену за квадратный метр квартиры</p>
+                    </div>
+                    <div class="prices-item _arrow">
+                        <p>Наведите курсором на этаж</p>
+                        <img src="icons/Group_8_1.svg" alt="icon">
+                    </div>
+                </div>
+            </div>
+            <svg id="etazhu" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 378.45 395.32"><g id="Слой_2" data-name="Слой 2"><g id="Слой_1-2" data-name="Слой 1"><path class="cls-1" d="M46.68,393,0,395.32v-24l46.68-2.51,65.51-10.24,29.52,1.88,26.37-3.13,44.38,3.13,57.77,4.6v2.3l50,4,9.83-1,47.73,5.85.63,19.23-47.73-.63h-9.63l-49.6-1v-3.14l-59-1.67-44.38-1.25-26.37,1.67-29.52-1.05Z"></path><path class="cls-1" d="M32.23,369.64,0,372.46V346.23l26.79-4.85,21.35,2,31-5.85v-3l33.49-6.86,29.73,4,25.74-4h26.59l24.38,4.94L270,339v3.43l49.4,5.65,10.05-1.21,48.14,8.88.84,20.59-47.52-5.25-10.25.81-49.4-4V365.6l-103.2-7.47-25.74,3.44-29.73-2.43-64.47,10.5Z"></path><path class="cls-1" d="M1.51,320v25.62l26.27-4.79,20.89,2.29,31-6.25v-2.5L112,327.09l30.19,4,24.62-4h26.88l17.38,4L268.32,339v3.33l49.43,6.25,9.31-1.88,47.36,9.59-.83-21L326,323.14l-9.51,1.25-48.19-9v-4.58L211,300.43l-17.38-3.12H166.77l-24.62,5-28.75-5-33.71,9.58v2.71l-31.44,8.33-21.09-2.71Z"></path><path class="cls-1" d="M2.87,319.62V297.35l24.83-8.49,22.14,3.82,31.24-10.61.21-6.36,33.1-11.88,34.14,7,20.69-7h24.62l18,5.09,38.27,10.18,4.14-1.06,14.28,4v6.58l49.24,12.52,9.31-1.07L355.22,308v2.34l18.62,5.51,1,19.52L356,330.44l-28.13-6.79-9.31,1.7-49-9.34v-4.66l-57.72-11.46-18-3H169.22l-25.86,4.88-29-4.88-33.1,9.76v2.76l-31.45,8.7-21.52-3Z"></path><path class="cls-1" d="M27.63,265.74,2.87,276.12v19.42l24.76-7.3,22.08,3.46,31.36-9.62v-5.57l32-10.39,35.29,6,19-6h26.62l55.5,13.66,3.92-1.16,14.24,3.66v6l49.73,11.53,8.25-1.15,28.89,7.12v2.11l18.36,5V294.39l-19.19-6v-3.27l-28.06-8.65-9.08,2.11-37.35-9.81-11.55-2.88v-8.46l-14.24-4.42L249,254l-38.38-10.39-18-6.34H166.29l-19.4,6.34-32.39-6.34L81.07,250.16v8.08L49.71,270Z"></path><path class="cls-1" d="M28.3,240.19,2.87,253.27V277.1L28.3,265.5l22.13,3.59,30.6-12v-6.33l32.05-13.5,29.77,8.44,24.6-10.76h25.64l56.45,17.93,3.72-.63,15.09,4.85v8.85l49.21,13.5,9.31-1.9,27.7,9.49v3.38l19.85,6.53-.83-21.3L354,268.24V264l-28.12-9.91-8.89,2.11L279.1,243.15l-11.37-3.38v-8.43l-14.47-5.49-4.34.85-37.84-15-17-7H167.45l-24.6,11.17-29.77-8.85L81,222.48v7.8l-30.6,14.77Z"></path><path class="cls-1" d="M28.8,214.13,4,229.78v21.07L28.8,238.21,51,243l31.46-14.45v-5.82l31.88-15.25,29.19,9.43,24.84-12.24H194.4l55.68,20.47,4.14-1L268.5,230v9l49.68,15.86,9.53-2.41,27.32,10v4.62l19.46,6.42-.62-18.66-19.46-7.63V242l-28.15-12-9.53,3-36.22-14.24-12-5.22V205.3l-15.31-6.62-3.94,1.4-37.67-15.65L194.4,177l-26.08-1-24.84,12.44-30-9.83-31,17.46v8.83L51.78,220.35Z"></path><path class="cls-1" d="M30.18,189.71,4.72,207v22.41l24.43-14.59,22.79,6,29.77-16v-9.66L113.54,178l29,10.49,24.43-13.36h25.87l54.81,24.06,3.69-1,14.79,6v12.13l48.25,17.68,8.83-2.67,28.74,12.54v4.52L371,255.93l-1-19.73-18.89-8.64V221l-27.92-13.57-8.83,4.52L278.6,196.11l-13.14-4.73V178.84l-14.16-6.79-4.11,1L210,155l-17.24-9.46H166.92l-25.25,15-28.74-11.92L81.72,167.92v10.9L51.33,196.49Z"></path><path class="cls-1" d="M28.7,164.29,3.94,183.11,3.12,207.5,28.7,190.14l21.87,5.79,30.74-18v-8.68l31.36-21.09,28.89,12.2,24.55-14.89H191.9l55.5,29.15,3.5-1,14.86,6.82v10.75l48.9,20.47,9.28-3.52L351.38,222v5.37l19.6,9.93L370.16,217l-18.78-10.14V201.3l-28.47-15.71-10.11,3.1-36.31-17.78-10.73-5.17v-12.2L250.9,146.1l-4.12,1.65-38-22.32-16.92-9.52H166.11l-24.55,15.72-29.71-13L81.31,139.9v12.2L50.57,171.74Z"></path><path class="cls-1" d="M29.53,140.38,4.77,161.16v21.62l24.76-17.25L51,172.8l30.13-20V140.38L112.88,119l28.88,12.68,24.35-16,28.68.83,51.37,30.14h5.78l13.41,6.45.82,13.09,48.69,23.08,8.26-2.71L350.56,200v7.49L371,217.7,370.16,198l-19.6-10.61v-7.48l-27.44-16.21-9.5,4.57-38.16-19.54-10.11-5.4V127.7l-15.27-9.56h-3.92l-34-20.79L191.07,84.26H166.73l-26.21,19.53L112.88,89,81.11,111.9v15.59L51.6,147.86Z"></path><path class="cls-1" d="M30.05,117.16,6,137.72,4.77,161.53,30.05,141l21.79,8.75,30-23.61v-12l32.68-23.4,27.13,13.22,24.87-16.28h24.26l54.88,30.94,3.91,2,14,7.94,1,16.28,48.31,23.81,9.45-4.68,26.72,16.08v7.74L369,199l-.82-18.93-19.12-10.79V158.48L320.7,142.4l-9.05,4.27-34.74-19.74-12.74-6.71.41-15.06-15-10.38h-3.91L207.85,70,190.79,57.53H166.53L141.66,78.9l-29-15.26-31.45,25v14.25L51.84,125.51Z"></path><path class="cls-1" d="M31.63,92.56l-25.46,23L5.76,137.8,31,117l21.77,8.15,29.57-23.43V87.26l31-25.48L142.72,78.7l24.84-19.36,23.82-.61L246.62,94.8h3.49l14,9.58.82,15.69,46.82,25.67,9.45-3.66L349.49,158v10.4L369,179.57l-.82-20.78-18.69-11.41V137.8l-28.33-17.73-8.22,4.07L277,101.93,264.89,94.8l-.82-18.75-14-9.58-4.52.41L208.84,41l-16-11.21h-27.1L142.1,50,113.36,33.05l-31,26.29V76.46L52.16,100.3Z"></path><path class="cls-1" d="M31.81,67.53,6.19,94.24l1.23,25.85L31.81,96.63l21.32,8.25L83.26,78V62.54L114.41,35.4,142.5,53.2l23.77-24.54H194l52.27,40.39L250.11,68l14.35,10,1,21.06,48.17,30.19,8-4.35,27.67,18.24.62,12L369,168.51l-1.84-23.67-17.84-12.38-.61-12.59L320.21,99l-8,4.34L274.71,78l-10.25-6.3V50.81L249.09,39.3l-3.9,2.39-33.82-28L190.46,0H166.27L142.5,21.28,114.41,2,83.26,34.31v15.2L53.13,78Z"></path></g></g></svg>
+            <div class="etazh__popup">
+                <div class="etazh__popup-left">
+                    <span>14 этаж</span>
+                </div>
+                <div class="etazh__popup-right">
+                    <b>от 40 000 руб.</b>
+                    <span>за 1м²</span>
+                </div>
+            </div>
+        </section>
+        <section class="plan">
+            <div class="container">
+                <h2>Планировки квартир</h2>
+                <div class="container">
+                    <div class="slider-block">
+                        <div class="slider-item">
+                            <div class="row">
+                                <div class="col-6  slider-item_left">
+                                    <p class="type">Тип №1</p>
+                                    <p class="floor">Этажи: 2-9</p>
+                                    <p class="square">Общая площадь: 91,2 м²</p>
+                                    <p class="room">Количество комнат: 2</p>
+                                    <button class="btn-red">Записаться на просмотр</button>
+                                </div>
+                                <div class="col-6 slider-item_right">
+                                    <img src="img/typ_1.webp" alt="image">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slider-item">
+                            <div class="row">
+                                <div class="col-6  slider-item_left">
+                                    <p class="type">Тип №2</p>
+                                    <p class="floor">Этажи: 12 и 14</p>
+                                    <p class="square">Общая площадь: 59,3 м²</p>
+                                    <p class="room">Количество комнат: 1</p>
+                                    <button class="btn-red">Записаться на просмотр</button>
+                                </div>
+                                <div class="col-6 slider-item_right">
+                                    <img src="img/typ_2.webp" alt="image">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slider-item">
+                            <div class="row">
+                                <div class="col-6  slider-item_left">
+                                    <p class="type">Тип №3</p>
+                                    <p class="floor">Этажи: 2-9</p>
+                                    <p class="square">Общая площадь: 80,3 м²</p>
+                                    <p class="room">Количество комнат: 2</p>
+                                    <button class="btn-red">Записаться на просмотр</button>
+                                </div>
+                                <div class="col-6 slider-item_right">
+                                    <img src="img/typ_3.webp" alt="image">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slider-item">
+                            <div class="row">
+                                <div class="col-6  slider-item_left">
+                                    <p class="type">Тип №4</p>
+                                    <p class="floor">Этажи: 2-14</p>
+                                    <p class="square">Общая площадь: 55,6 м²</p>
+                                    <p class="room">Количество комнат: 1</p>
+                                    <button class="btn-red">Записаться на просмотр</button>
+                                </div>
+                                <div class="col-6 slider-item_right">
+                                    <img src="img/typ_4.webp" alt="image">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slider-item">
+                            <div class="row">
+                                <div class="col-6  slider-item_left">
+                                    <p class="type">Тип №5</p>
+                                    <p class="floor">Этажи: 2-14</p>
+                                    <p class="square">Общая площадь: 57,8 м²</p>
+                                    <p class="room">Количество комнат: 1</p>
+                                    <button class="btn-red">Записаться на просмотр</button>
+                                </div>
+                                <div class="col-6 slider-item_right">
+                                    <img src="img/typ_5.svg" alt="image">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slider-item">
+                            <div class="row">
+                                <div class="col-6  slider-item_left">
+                                    <p class="type">Тип №6</p>
+                                    <p class="floor">Этажи: 2-14</p>
+                                    <p class="square">Общая площадь: 90,3 м²</p>
+                                    <p class="room">Количество комнат: 1</p>
+                                    <button class="btn-red">Записаться на просмотр</button>
+                                </div>
+                                <div class="col-6 slider-item_right">
+                                    <img src="img/typ_6.svg" alt="image">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slider-item">
+                            <div class="row">
+                                <div class="col-6  slider-item_left">
+                                    <p class="type">Тип №7</p>
+                                    <p class="floor">Этажи: 2-14</p>
+                                    <p class="square">Общая площадь: 48,2 м²</p>
+                                    <p class="room">Количество комнат: 1</p>
+                                    <button class="btn-red">Записаться на просмотр</button>
+                                </div>
+                                <div class="col-6 slider-item_right">
+                                    <img src="img/typ_7.webp" alt="image">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slider-item">
+                            <div class="row">
+                                <div class="col-6  slider-item_left">
+                                    <p class="type">Тип №8</p>
+                                    <p class="floor">Этажи: 2-8</p>
+                                    <p class="square">Общая площадь: 109,1 м²</p>
+                                    <p class="room">Количество комнат: 3</p>
+                                    <button class="btn-red">Записаться на просмотр</button>
+                                </div>
+                                <div class="col-6 slider-item_right">
+                                    <img src="img/typ_8.webp" alt="image">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slider-item">
+                            <div class="row">
+                                <div class="col-6  slider-item_left">
+                                    <p class="type">Тип №9</p>
+                                    <p class="floor">Этажи: 2-8</p>
+                                    <p class="square">Общая площадь: 116,2 м²</p>
+                                    <p class="room">Количество комнат: 3</p>
+                                    <button class="btn-red">Записаться на просмотр</button>
+                                </div>
+                                <div class="col-6 slider-item_right">
+                                    <img src="img/typ_9.webp" alt="image">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slider-item">
+                            <div class="row">
+                                <div class="col-6  slider-item_left">
+                                    <p class="type">Тип №10</p>
+                                    <p class="floor">Этажи: 9-14</p>
+                                    <p class="square">Общая площадь: 83,3 м²</p>
+                                    <p class="room">Количество комнат: 2</p>
+                                    <button class="btn-red">Записаться на просмотр</button>
+                                </div>
+                                <div class="col-6 slider-item_right">
+                                    <img src="img/typ_10.webp" alt="image">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slider-item">
+                            <div class="row">
+                                <div class="col-6  slider-item_left">
+                                    <p class="type">Тип №11</p>
+                                    <p class="floor">Этажи: 9-14</p>
+                                    <p class="square">Общая площадь: 51 м²</p>
+                                    <p class="room">Количество комнат: 1</p>
+                                    <button class="btn-red">Записаться на просмотр</button>
+                                </div>
+                                <div class="col-6 slider-item_right">
+                                    <img src="img/typ_13.webp" alt="image">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slider-item">
+                            <div class="row">
+                                <div class="col-6  slider-item_left">
+                                    <p class="type">Тип №12</p>
+                                    <p class="floor">Этажи: 9-14</p>
+                                    <p class="square">Общая площадь: 91,7 м²</p>
+                                    <p class="room">Количество комнат: 2</p>
+                                    <button class="btn-red">Записаться на просмотр</button>
+                                </div>
+                                <div class="col-6 slider-item_right">
+                                    <img src="img/typ_14.svg" alt="image">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="form-backcall">
+            <div class="container">
+                <h2>Оставьте заявку на персональный подбор <br> квартиры в комплексе «Белый Аист»</h2>
+                <div class="row">
+                    <div class="col-12 form">
+                            <form action="" class="send-form">
+                                <input type="text" placeholder="Введите ваше Имя" name="name">
+                                <input type="tel" placeholder="Введите ваш номер" name="phone">
+                                <button type="submit">Оставить заявку</button>
+                            </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="gallery">
+            <div class="container">
+                <h2>Галерея комплекса</h2>
+                <a href="">Смотреть все фото (20) <img src="icons/eye_1_1.svg" width="25" alt="icon"> </a>
+            </div>
+            <div class="row gallery-block">
+                <div class="gallery-item col-3"><img src="img/IMG_1959_1.jpg" alt="image"></div>
+                <div class="gallery-item col-3"><img src="img/IMG_1893_1.jpg" alt="image"></div>
+                <div class="gallery-item col-3"><img src="img/IMG_1903_1.jpg" alt="image"></div>
+                <div class="gallery-item col-3"><img src="img/IMG_1784_1.jpg" alt="image"></div>
+                <div class="gallery-item col-3"><img src="img/IMG_2005.jpg" alt="image"></div>
+                <div class="gallery-item col-3"><img src="img/IMG_1902.jpg" alt="image"></div>
+                <div class="gallery-item col-3"><img src="img/IMG_1985.jpg" alt="image"></div>
+                <div class="gallery-item col-3"><img src="img/IMG_1808.jpg" alt="image"></div>
+            </div>
+        </section>
+        <section class="information">
+            <div class="container">
+                <h2>Информация о застройщике</h2>
+                <div class="row information-block">
+                    <div class="information-item col-6">
+                        <img src="img/missi3on.jpg" alt="">
+                        <p>История Холдинга «Эко-Тепло» начинается в далёком 1978 году, когда для обслуживания сферы столичного строительства было организовано объединение РСУ-1 «Мостеплоэнерго». Уже в те годы, это ремонтно-строительное управление находилось в авангарде передовых технологий реконструкции и строительства. После перестройки коллектив РСУ-1 вышел на принципиально новые рыночные отношения, которые и стали базой для создания в 1994 году компании «Эко-Тепло», которая стала успешным правопреемником традиций и профессиональных связей объединения «Мостеплоэнерго».</p>
+                        <p>В начале 21 века Холдинг «Эко-Тепло» уже известен на столичном рынке как самый ответственный подрядчик и инвестор, профессионально занимающийся инженерными коммуникациями, автотранспортными услугами, строительством и продажей престижной недвижимости.</p>
+                        <p>Холдинг «Эко-Тепло» является еще и управляющей компанией для своих построенных объектов. Чистые подъезды и придомовая территория, адекватные тарифы и своевременные работы – все, благодаря чему управляющая компания зарекомендовала себя с хорошей стороны.</p>
+                    </div>
+                    <div class="information-item col-5">
+                        <p>Реализованные проекты</p>
+                        <div class="row projects-block">
+                            <div class="projects-item col-6">
+                                <a href="#"><img src="img/11.jpg" alt="image"></a> 
+                                <a href="#"><p>Элитный дом на ул. Чаянова г.Москва</p></a> 
+                            </div>
+                            <div class="projects-item col-6">
+                                <a href="#"><img src="img/1.jpg" alt="image"></a> 
+                                <a href="#"><p>ЖК Донское Подворье, Замоскворечье</p></a> 
+                            </div>
+                            <div class="projects-item col-6">
+                                <a href="#"><img src="img/8.jpg" alt="image"></a> 
+                                <a href="#"><p>Дача Сталина, г. Москва</p></a> 
+                            </div>
+                            <div class="projects-item col-6">
+                                <a href="#"><img src="img/IMG_1982.jpg" alt="image"></a> 
+                                <a href="#"><p>Дом на Учебной, г. Конаково</p></a> 
+                            </div>
+                            <div class="projects-item col-6">
+                                <a href="#"><img src="img/12.jpg" alt="image"></a> 
+                                <a href="#"><p>Коттеджный поселок Ольгино, г. Конаково</p></a> 
+                            </div>
+                            <div class="projects-item col-6">
+                                <a href="#"><img src="img/4.jpg" alt="image"></a> 
+                                <a href="#"><p>Коттеджный поселок Ричмонд, Рублево-Успенское шоссе</p></a> 
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="pay-method">
+            <div class="container">
+                <h2>Способы покупки</h2>
+                <div class="row pay-block">
+                    <div class="pay-item col-4">
+                        <img src="icons/check-mark_1.svg" width="40" alt="icon"> 
+                        <p>ИПОТЕКА</p>
+                        <p>Квартиры в ЖК «Белый аист» можно оформить в ипотеку, или использовать Жилищный сертификат</p>
+                    </div>
+                    <div class="pay-item col-4">
+                        <img src="icons/check-mark_1.svg" width="40" alt="icon"> 
+                        <p>РАССРОЧКА</p>
+                        <p>Не хотите покупать в ипотеку? Мы пойдём Вам навстречу, предложив беспроцентную рассрочку на срок 1 год без каких-либо подводных камней</p>
+                    </div>
+                    <div class="pay-item col-4">
+                        <img src="icons/check-mark_1.svg" width="40" alt="icon"> 
+                        <p>МАТКАПИТАЛ</p>
+                        <p>Все квартиры от застройщика можно приобрести с использованием материнского капитала</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="sale" id="sale">
+            <div class="container">
+                <div class="row sale-block">
+                    <div class="sale-item_1 col-12">
+                        <p>АКЦИЯ – ДО <span>31.03.2020г.</span></p>
+                    </div>
+                    <div class="sale-item_2 col-6">
+                        <p>2-8 этажи</p>
+                        <p>35 000 руб. за 1 квадратный метр!</p>
+                    </div>
+                    <div class="sale-item_3 col-6">
+                        <button class="">Получить консультацию</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="documents">
+            <div class="container">
+                <h2>Документация</h2>
+                <div class="row documents-block">
+                    <div class="documents-item col-3">
+                        <img src="img/Svidetelstvo-1.webp" alt="image">
+                    </div>
+                    <div class="documents-item col-3">
+                        <img src="img/address-1.webp" alt="image">
+                    </div>
+                    <div class="documents-item col-3">
+                        <img src="img/vvod2-1.jpg" alt="image">
+                    </div>
+                    <div class="documents-item col-3">
+                        <img src="img/vvod1.webp" alt="image">
+                    </div>                                                            
+                </div>
+            </div>
+        </section>
+        <section class="contacts">
+            <div class="row">
+                <div class="col-6 map">
+                    <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A9e681732f75432bd9667fba304af4e1997ffc7988926a471deccc2fe06d4e29c&amp;source=constructor" width="100%" height="100%" frameborder="0"></iframe>
+                </div>
+                <div class="col-6 map-info">
+                    <h2>Контакты</h2>
+                    <div class="info-item">
+                        <p>Телефон</p>
+                        <a href="tel:+7 499 180 50 35">+7 499 180 50 35</a>
+                    </div>
+                    <div class="info-item">
+                        <p>Email</p>
+                        <a href="mailto:info@kvartira-konakovo.ru">info@kvartira-konakovo.ru</a>
+                    </div>
+                    <div class="info-item">
+                        <p>Местный офис</p>
+                        <a>Тверская область, Конаково, улица Учебная, дом 1А</a>
+                    </div>
+                    <div class="info-item">
+                        <p>Головной офис</p>
+                        <a>Москва, ул. Енисейская, д. 7, корп. 3.</a>
+                    </div>                                                            
+                </div>
+            </div>
+        </section>
+        <section class="questions">
+            <div class="container">
+                <h2>Остались вопросы? <br> Напишите нам!</h2>
+                <div class="row">
+                    <div class="col-12 form">
+                        <form action="" class="send-form">
+                            <input type="text" placeholder="Введите ваше Имя" name="name">
+                            <input type="tel" placeholder="Введите ваш номер" name="phone">
+                            <button type="submit">Оставить заявку</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
     <footer class="footer">
-
+        <div class="container">
+            <div class="row">
+                <div class="footer-block col-12">
+                    <img src="img/logo.svg" alt="logo" class="logo_img">
+                    <a href="mailto:info@kvartira-konakovo.ru">info@kvartira-konakovo.ru</a>
+                </div>
+                <div class="footer-block col-12">
+                    <p>Разработка сайта: <a class="partner" href="https:/artvolkov.ru">artvolkov.ru</a></p>
+                    <a href="#" class="policy">Политика конфиденциальности</a>
+                </div>
+            </div>
+        </div>
     </footer>
     <script src="js/jquery-3.4.1.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script src="js/slick.js"></script>
     <script src="js/main.js"></script>
 </body>
 </html>
