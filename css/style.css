@@ -1,0 +1,13 @@
+@font-face {
+    font-family: 'Circe';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Circe'), url('CRC55.woff') format('woff');
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Circe', 'Arial', sans-serif;
+}
+
