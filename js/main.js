@@ -128,6 +128,10 @@ $(document).ready(function(){
         $('html, body').animate({
             'scrollTop': offset.top
         }, 1000);
+        if ($('.burger').hasClass('close-burger')) {
+            $('.burger').removeClass('close-burger');
+            $('.scroll-menu').css('top','-500px');
+        }
       });
       $('a[href="#special"]').click(function(){
         let idName = $(this).attr('href');
@@ -165,9 +169,12 @@ function burger_click() {
             menu.animate({
                 top: -500
             }, 300);
-            win.css('display','');
             win.css('background-color','transparent');
             body.css('overflow','');
+            setTimeout(function(){
+                win.css('display','none');
+            },300);
+            
             // scrollLock.enablePageScroll();
         }
         $(this).toggleClass('close-burger');

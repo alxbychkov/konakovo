@@ -1,9 +1,3 @@
-@font-face {
-    font-family: 'Circe';
-    font-style: normal;
-    font-weight: normal;
-    src: local('Circe'), url('CRC55.woff') format('woff');
-}
 * {
     margin: 0;
     padding: 0;
@@ -306,6 +300,7 @@ p {
         width: 100%;
     }
 }
+
 h2 {
     font-size: 38px;
     line-height: 1.3;
@@ -1107,5 +1102,27 @@ section.contacts {
     }
     .modal-body h2 {
         white-space: nowrap;
+    }
+}
+@media screen and (max-width:580px) {
+    /* .logo-text,
+    .main-title,
+    .first-block-buttons, */
+    section.about_block h2,
+    .row {
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .logo {
+        /* padding-left: 15px; */
+    }
+    .first-block {
+        text-align: center;
+    }
+    .first-block-buttons {
+        margin: 0 auto;
+    }
+    .main-title p:first-of-type {
+        flex-direction: column;
     }
 }
