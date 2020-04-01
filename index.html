@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/slick-theme.css">
     <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
     <link rel="stylesheet" href="css/style.css">
     <title>Официальный сайт ЖК «БЕЛЫЙ АИСТ» в Конаково, Тверской области. Акции, цены, планировки, отзывы.</title>
 </head>
@@ -19,20 +20,39 @@
                 </div>
                 <nav class="menu col-8">
                     <ul class="nav-menu">
-                        <li class="nav-menu-item"><a class="nav-menu_link" href="#">О нас</a></li>
-                        <li class="nav-menu-item"><a class="nav-menu_link" href="#">Цены</a></li>
-                        <li class="nav-menu-item"><a class="nav-menu_link" href="#">Планировка</a><li>
-                        <li class="nav-menu-item"><a class="nav-menu_link" href="#">Галерея</a></li>
-                        <li class="nav-menu-item"><a class="nav-menu_link" href="#">Способ покупки</a></li>
+                        <li class="nav-menu-item"><a class="nav-menu_link" href="#o-nas">О нас</a></li>
+                        <li class="nav-menu-item"><a class="nav-menu_link" href="#prices">Цены</a></li>
+                        <li class="nav-menu-item"><a class="nav-menu_link" href="#plan">Планировка</a><li>
+                        <li class="nav-menu-item"><a class="nav-menu_link" href="#gallery">Галерея</a></li>
+                        <li class="nav-menu-item"><a class="nav-menu_link" href="#pay">Способ покупки</a></li>
                         <li class="nav-menu-item"><a href="tel:+7 (499) 215-69-91" class="nav-menu_link _phone">+7 (499) 215-69-91</a></li>
                     </ul>
                 </nav>
                 <div class="call_me col-2">
-                    <button class="btn-red">Заказать звонок</button>
+                    <button class="btn-red" data-toggle="modal" data-target="#exampleModalCenter">Заказать звонок</button>
+                    <div class="burger">
+                        <span class="burger-line"></span>
+                        <span class="burger-line"></span>
+                        <span class="burger-line"></span>
+                    </div>
                 </div>
             </div>
         </div>
     </header>
+    <div class="header-scroll">
+            <nav class="scroll-menu">
+                <ul class="scroll-nav">
+                    <li class="scroll-nav-item"><a class="scroll-nav-link _line" href="#o-nas">О нас</a></li>
+                    <li class="scroll-nav-item"><a class="scroll-nav-link _line" href="#prices">Цены</a></li>
+                    <li class="scroll-nav-item"><a class="scroll-nav-link _line" href="#plan">Планировка</a></li>
+                    <li class="scroll-nav-item"><a class="scroll-nav-link _line" href="#gallery">Галерея</a></li>
+                    <li class="scroll-nav-item"><a class="scroll-nav-link _line" href="#pay">Способ покупки</a></li>
+                    <li class="scroll-nav-item"><a class="scroll-nav-link _phone" href="tel:+7 499 180 50 35">+7 499 180 50 35</a></li>
+                    <li class="scroll-nav-item"><a class="scroll-nav-link _mail" href="mailto:info@kvartira-konakovo.ru">info@kvartira-konakovo.ru</a></li>
+                    <li class="scroll-nav-item">Упаковка лендинга: <a class="scroll-nav-link" href="https://artvolkov.ru">artvolkov.ru</a></li>
+                </ul>
+            </nav>
+    </div>
     <main class="main">
         <section class="first-block" style="background-image: url(img/back1.webp)">
             <div class="container">
@@ -46,13 +66,13 @@
                         <p>Квартиры в ЖК «Белый аист» с выгодой <span>до 600 000 руб.</span> </p>
                     </div>
                     <div class="col-12 first-block-buttons">
-                        <a href="" class="btn-red">Подробнее об акции</a>
-                        <button>Персональный подбор квартиры</button>
+                        <a href="#special" class="btn-red">Подробнее об акции</a>
+                        <button data-toggle="modal" data-target="#exampleModalCenter">Персональный подбор квартиры</button>
                     </div>
                 </div>
             </div>
         </section>
-        <section class="about_block">
+        <section class="about_block" id="o-nas">
             <div class="container">
                 <h2>О жилом комплексе</h2>
                 <nav class="row">
@@ -152,7 +172,7 @@
                                     </p>
                                     <p class="offer_text"><img src="icons/star_1.svg" width="16" alt="icon">Любая форма оплаты: <br>
                                         Ипотека, Маткапитал, Рассрочка, Жилищный сертификат</p>
-                                    <button>Заказать звонок</button>
+                                    <button data-toggle="modal" data-target="#exampleModalCenter">Заказать звонок</button>
                                 </div>
                             </div>
                         </div>                        
@@ -164,7 +184,7 @@
             <div class="container">
                 <h2>Покупая квартиру в ЖК <br> «Белый аист» вы получаете:</h2>
                 <div class="row advantages-block">
-                    <div class="advantages-item col-1 col-lg-4 col-md-2">
+                    <div class="advantages-item col-12 col-lg-4 col-md-6">
                         <div class="advantages-item-head">
                             <img src="icons/034-area.svg" alt="icon">
                             <p>Дополнительные квадратные метры</p>
@@ -175,7 +195,7 @@
                             </p>
                         </div>
                     </div>
-                    <div class="advantages-item col-1 col-lg-4 col-md-2">
+                    <div class="advantages-item col-12 col-lg-4 col-md-6">
                         <div class="advantages-item-head">
                             <img src="icons/013-protection.svg" alt="icon">
                             <p>Спокойствие, только спокойствие</p>
@@ -184,7 +204,7 @@
                             <p>Дом огорожен металлическим забором и въезд на территорию производится через придомовой шлагбаум, что позволит вам не беспокоиться о собственной безопасности и безопасности детей.</p>
                         </div>
                     </div>
-                    <div class="advantages-item col-1 col-lg-4 col-md-2">
+                    <div class="advantages-item col-12 col-lg-4 col-md-6">
                         <div class="advantages-item-head">
                             <img src="icons/tree_1.svg" alt="icon">
                             <p>Дышите свежим воздухом</p>
@@ -193,7 +213,7 @@
                             <p>Всего лишь 5 минут на автомобиле отделяют дом от Конаковского бора. Это большой сосновый парк-природный заповедник с чистейшим лесным воздухом, где вы сможете насладиться неспешными прогулками по лесу или вдоль набережной Волги, а ваши дети будут рады большой детской площадке посреди леса</p>
                         </div>
                     </div>
-                    <div class="advantages-item col-1 col-lg-4 col-md-2">
+                    <div class="advantages-item col-12 col-lg-4 col-md-6">
                         <div class="advantages-item-head">
                             <img src="icons/gift_1.svg" alt="icon">
                             <p>Приятные бонусы</p>
@@ -202,7 +222,7 @@
                             <p>При покупке квартиры в жилом комплексе "Белый аист", Вы становитесь членом VIP-клуба элитного коттеджного поселка "Ольгино", расположенного на живописном берегу реки Волги. Всем членам VIP-клуба предоставлено эксклюзивное право пользоваться богатой инфраструктурой коттеджного поселка "Ольгино" на специальных условиях</p>
                         </div>
                     </div>
-                    <div class="advantages-item col-1 col-lg-4 col-md-2">
+                    <div class="advantages-item col-12 col-lg-4 col-md-6">
                         <div class="advantages-item-head">
                             <img src="icons/heart.svg" alt="icon" width="50">
                             <p>Здоровье под контролем</p>
@@ -211,7 +231,7 @@
                             <p>В городе имеется Многопрофильный Медицинский Центр «Ольгино», в котором предусмотрены детские и взрослые специалисты. Ваше здоровье всегда будет под нашим контролем.</p>
                         </div>
                     </div>
-                    <div class="advantages-item col-1 col-lg-4 col-md-2">
+                    <div class="advantages-item col-12 col-lg-4 col-md-6">
                         <div class="advantages-item-head">
                             <img src="icons/018-garage.svg" alt="icon">
                             <p>Паркуйтесь на здоровье</p>
@@ -223,35 +243,35 @@
                 </div>
             </div>
         </section>
-        <section class="specials">
+        <section class="specials" id="special">
             <div class="container">
                 <h2>Акции и спецпредложения</h2>
                 <div class="row specials-block">
                     <div class="specials-item col-12">
                         <p class="p-high">Квартиры в ЖК «Белый аист» <br> с выгодой <span class="red">до 600 000 руб.</span></p>
                     </div>
-                    <div class="specials-item col-5 _center">
+                    <div class="specials-item col-lg-5 col-12 _center">
                         <p>Последняя возможность приобрести квартиру</p>
                         <p class="p-medium">Дом построен, а квартиры остались. Чтобы быстрее реализовать квартиры, мы снизили цены на ВСЕ квартиры ДО 31.03.2020 г.</p>
                     </div>
-                    <div class="specials-item col-5 _border">
+                    <div class="specials-item col-lg-5 col-12 col-sm-6 _border">
                         <p class="p-medium">2-8 этажи</p>
                         <p>35 000 руб. за 1 квадратный метр!</p>
                     </div>
                     <div class="specials-item col-10">
                         <p class="p-high">Закажите консультацию специалиста, пока действует акция и квартиры с выгодой <span class="red">до 600 000 руб.</span> есть в наличии</p>
                     </div>
-                    <div class="special-item form col-12">
+                    <div class="special-item form col-lg-12 col-9">
                         <form action="" class="send-form">
                             <input type="text" placeholder="Введите ваше Имя" name="name">
                             <input type="tel" placeholder="Введите ваш номер" name="phone">
-                            <button type="submit">Заказать консультацию</button>
+                            <button type="submit" data-toggle="modal" data-target="#exampleModalCenter">Заказать консультацию</button>
                         </form>
                     </div>
                 </div>
             </div>
         </section>
-        <section class="prices" style="background-image: url(img/back6.jpg);">
+        <section class="prices" style="background-image: url(img/back6.jpg);" id="prices">
             <div class="container">
                 <h2>Цены квартир по этажам</h2>
                 <div class="row">
@@ -275,176 +295,31 @@
                 </div>
             </div>
         </section>
-        <section class="plan">
+        <section class="plan" id="plan">
             <div class="container">
                 <h2>Планировки квартир</h2>
+                <div class="navigation">
+                    <div class="prev">
+                        <button class="btn-prev"><
+                        </button>
+                    </div>
+                    <div class="next">
+                        <button class="btn-next">></button>
+                    </div>
+                </div>
                 <div class="container">
                     <div class="slider-block">
                         <div class="slider-item">
                             <div class="row">
-                                <div class="col-6  slider-item_left">
+                                <div class="col-md-6 col-12  slider-item_left">
                                     <p class="type">Тип №1</p>
                                     <p class="floor">Этажи: 2-9</p>
                                     <p class="square">Общая площадь: 91,2 м²</p>
                                     <p class="room">Количество комнат: 2</p>
-                                    <button class="btn-red">Записаться на просмотр</button>
+                                    <button class="btn-red" data-toggle="modal" data-target="#exampleModalCenter">Записаться на просмотр</button>
                                 </div>
-                                <div class="col-6 slider-item_right">
+                                <div class="col-md-6 col-12 slider-item_right">
                                     <img src="img/typ_1.webp" alt="image">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="slider-item">
-                            <div class="row">
-                                <div class="col-6  slider-item_left">
-                                    <p class="type">Тип №2</p>
-                                    <p class="floor">Этажи: 12 и 14</p>
-                                    <p class="square">Общая площадь: 59,3 м²</p>
-                                    <p class="room">Количество комнат: 1</p>
-                                    <button class="btn-red">Записаться на просмотр</button>
-                                </div>
-                                <div class="col-6 slider-item_right">
-                                    <img src="img/typ_2.webp" alt="image">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="slider-item">
-                            <div class="row">
-                                <div class="col-6  slider-item_left">
-                                    <p class="type">Тип №3</p>
-                                    <p class="floor">Этажи: 2-9</p>
-                                    <p class="square">Общая площадь: 80,3 м²</p>
-                                    <p class="room">Количество комнат: 2</p>
-                                    <button class="btn-red">Записаться на просмотр</button>
-                                </div>
-                                <div class="col-6 slider-item_right">
-                                    <img src="img/typ_3.webp" alt="image">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="slider-item">
-                            <div class="row">
-                                <div class="col-6  slider-item_left">
-                                    <p class="type">Тип №4</p>
-                                    <p class="floor">Этажи: 2-14</p>
-                                    <p class="square">Общая площадь: 55,6 м²</p>
-                                    <p class="room">Количество комнат: 1</p>
-                                    <button class="btn-red">Записаться на просмотр</button>
-                                </div>
-                                <div class="col-6 slider-item_right">
-                                    <img src="img/typ_4.webp" alt="image">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="slider-item">
-                            <div class="row">
-                                <div class="col-6  slider-item_left">
-                                    <p class="type">Тип №5</p>
-                                    <p class="floor">Этажи: 2-14</p>
-                                    <p class="square">Общая площадь: 57,8 м²</p>
-                                    <p class="room">Количество комнат: 1</p>
-                                    <button class="btn-red">Записаться на просмотр</button>
-                                </div>
-                                <div class="col-6 slider-item_right">
-                                    <img src="img/typ_5.svg" alt="image">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="slider-item">
-                            <div class="row">
-                                <div class="col-6  slider-item_left">
-                                    <p class="type">Тип №6</p>
-                                    <p class="floor">Этажи: 2-14</p>
-                                    <p class="square">Общая площадь: 90,3 м²</p>
-                                    <p class="room">Количество комнат: 1</p>
-                                    <button class="btn-red">Записаться на просмотр</button>
-                                </div>
-                                <div class="col-6 slider-item_right">
-                                    <img src="img/typ_6.svg" alt="image">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="slider-item">
-                            <div class="row">
-                                <div class="col-6  slider-item_left">
-                                    <p class="type">Тип №7</p>
-                                    <p class="floor">Этажи: 2-14</p>
-                                    <p class="square">Общая площадь: 48,2 м²</p>
-                                    <p class="room">Количество комнат: 1</p>
-                                    <button class="btn-red">Записаться на просмотр</button>
-                                </div>
-                                <div class="col-6 slider-item_right">
-                                    <img src="img/typ_7.webp" alt="image">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="slider-item">
-                            <div class="row">
-                                <div class="col-6  slider-item_left">
-                                    <p class="type">Тип №8</p>
-                                    <p class="floor">Этажи: 2-8</p>
-                                    <p class="square">Общая площадь: 109,1 м²</p>
-                                    <p class="room">Количество комнат: 3</p>
-                                    <button class="btn-red">Записаться на просмотр</button>
-                                </div>
-                                <div class="col-6 slider-item_right">
-                                    <img src="img/typ_8.webp" alt="image">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="slider-item">
-                            <div class="row">
-                                <div class="col-6  slider-item_left">
-                                    <p class="type">Тип №9</p>
-                                    <p class="floor">Этажи: 2-8</p>
-                                    <p class="square">Общая площадь: 116,2 м²</p>
-                                    <p class="room">Количество комнат: 3</p>
-                                    <button class="btn-red">Записаться на просмотр</button>
-                                </div>
-                                <div class="col-6 slider-item_right">
-                                    <img src="img/typ_9.webp" alt="image">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="slider-item">
-                            <div class="row">
-                                <div class="col-6  slider-item_left">
-                                    <p class="type">Тип №10</p>
-                                    <p class="floor">Этажи: 9-14</p>
-                                    <p class="square">Общая площадь: 83,3 м²</p>
-                                    <p class="room">Количество комнат: 2</p>
-                                    <button class="btn-red">Записаться на просмотр</button>
-                                </div>
-                                <div class="col-6 slider-item_right">
-                                    <img src="img/typ_10.webp" alt="image">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="slider-item">
-                            <div class="row">
-                                <div class="col-6  slider-item_left">
-                                    <p class="type">Тип №11</p>
-                                    <p class="floor">Этажи: 9-14</p>
-                                    <p class="square">Общая площадь: 51 м²</p>
-                                    <p class="room">Количество комнат: 1</p>
-                                    <button class="btn-red">Записаться на просмотр</button>
-                                </div>
-                                <div class="col-6 slider-item_right">
-                                    <img src="img/typ_13.webp" alt="image">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="slider-item">
-                            <div class="row">
-                                <div class="col-6  slider-item_left">
-                                    <p class="type">Тип №12</p>
-                                    <p class="floor">Этажи: 9-14</p>
-                                    <p class="square">Общая площадь: 91,7 м²</p>
-                                    <p class="room">Количество комнат: 2</p>
-                                    <button class="btn-red">Записаться на просмотр</button>
-                                </div>
-                                <div class="col-6 slider-item_right">
-                                    <img src="img/typ_14.svg" alt="image">
                                 </div>
                             </div>
                         </div>
@@ -466,56 +341,56 @@
                 </div>
             </div>
         </section>
-        <section class="gallery">
+        <section class="gallery" id="gallery">
             <div class="container">
                 <h2>Галерея комплекса</h2>
-                <a href="">Смотреть все фото (20) <img src="icons/eye_1_1.svg" width="25" alt="icon"> </a>
+                <a href="img/IMG_1959_1.jpg" class="gallery-magnific" >Смотреть все фото (20) <img class="eye" src="icons/eye_1_1.svg" width="25" alt="icon"> </a>
             </div>
             <div class="row gallery-block">
-                <div class="gallery-item col-3"><img src="img/IMG_1959_1.jpg" alt="image"></div>
-                <div class="gallery-item col-3"><img src="img/IMG_1893_1.jpg" alt="image"></div>
-                <div class="gallery-item col-3"><img src="img/IMG_1903_1.jpg" alt="image"></div>
-                <div class="gallery-item col-3"><img src="img/IMG_1784_1.jpg" alt="image"></div>
-                <div class="gallery-item col-3"><img src="img/IMG_2005.jpg" alt="image"></div>
-                <div class="gallery-item col-3"><img src="img/IMG_1902.jpg" alt="image"></div>
-                <div class="gallery-item col-3"><img src="img/IMG_1985.jpg" alt="image"></div>
-                <div class="gallery-item col-3"><img src="img/IMG_1808.jpg" alt="image"></div>
+                <a href="img/IMG_1959_1.jpg" class="gallery-magnific col-lg-3 col-md-4 col-sm-6 col-12"><div class="gallery-item"><img src="img/IMG_1959_1.jpg" alt="image"></div></a>
+                <a href="img/IMG_1893_1.jpg" class="gallery-magnific col-lg-3 col-md-4 col-sm-6 col-12"><div class="gallery-item"><img src="img/IMG_1893_1.jpg" alt="image"></div></a>
+                <a href="img/IMG_1903_1.jpg" class="gallery-magnific col-lg-3 col-md-4 col-sm-6 col-12"><div class="gallery-item"><img src="img/IMG_1903_1.jpg" alt="image"></div></a>
+                <a href="img/IMG_1784_1.jpg" class="gallery-magnific col-lg-3 col-md-4 col-sm-6 col-12"><div class="gallery-item"><img src="img/IMG_1784_1.jpg" alt="image"></div></a>
+                <a href="img/IMG_2005.jpg" class="gallery-magnific col-lg-3 col-md-4 col-sm-6 col-12"><div class="gallery-item"><img src="img/IMG_2005.jpg" alt="image"></div></a>
+                <a href="img/IMG_1902.jpg" class="gallery-magnific col-lg-3 col-md-4 col-sm-6 col-12"><div class="gallery-item"><img src="img/IMG_1902.jpg" alt="image"></div></a>
+                <a href="img/IMG_1985.jpg" class="gallery-magnific col-lg-3 col-md-4 col-sm-6 col-12"><div class="gallery-item"><img src="img/IMG_1985.jpg" alt="image"></div></a>
+                <a href="img/IMG_1808.jpg" class="gallery-magnific col-lg-3 col-md-4 col-sm-6 col-12"><div class="gallery-item"><img src="img/IMG_1808.jpg" alt="image"></div></a>
             </div>
         </section>
         <section class="information">
             <div class="container">
                 <h2>Информация о застройщике</h2>
                 <div class="row information-block">
-                    <div class="information-item col-6">
+                    <div class="information-item col-12 col-md-6">
                         <img src="img/missi3on.jpg" alt="">
                         <p>История Холдинга «Эко-Тепло» начинается в далёком 1978 году, когда для обслуживания сферы столичного строительства было организовано объединение РСУ-1 «Мостеплоэнерго». Уже в те годы, это ремонтно-строительное управление находилось в авангарде передовых технологий реконструкции и строительства. После перестройки коллектив РСУ-1 вышел на принципиально новые рыночные отношения, которые и стали базой для создания в 1994 году компании «Эко-Тепло», которая стала успешным правопреемником традиций и профессиональных связей объединения «Мостеплоэнерго».</p>
                         <p>В начале 21 века Холдинг «Эко-Тепло» уже известен на столичном рынке как самый ответственный подрядчик и инвестор, профессионально занимающийся инженерными коммуникациями, автотранспортными услугами, строительством и продажей престижной недвижимости.</p>
                         <p>Холдинг «Эко-Тепло» является еще и управляющей компанией для своих построенных объектов. Чистые подъезды и придомовая территория, адекватные тарифы и своевременные работы – все, благодаря чему управляющая компания зарекомендовала себя с хорошей стороны.</p>
                     </div>
-                    <div class="information-item col-5">
+                    <div class="information-item col-lg-5 col-md-6 col-12">
                         <p>Реализованные проекты</p>
                         <div class="row projects-block">
-                            <div class="projects-item col-6">
+                            <div class="projects-item col-sm-6 col-12">
                                 <a href="#"><img src="img/11.jpg" alt="image"></a> 
                                 <a href="#"><p>Элитный дом на ул. Чаянова г.Москва</p></a> 
                             </div>
-                            <div class="projects-item col-6">
+                            <div class="projects-item col-sm-6 col-12">
                                 <a href="#"><img src="img/1.jpg" alt="image"></a> 
                                 <a href="#"><p>ЖК Донское Подворье, Замоскворечье</p></a> 
                             </div>
-                            <div class="projects-item col-6">
+                            <div class="projects-item col-sm-6 col-12">
                                 <a href="#"><img src="img/8.jpg" alt="image"></a> 
                                 <a href="#"><p>Дача Сталина, г. Москва</p></a> 
                             </div>
-                            <div class="projects-item col-6">
+                            <div class="projects-item col-sm-6 col-12">
                                 <a href="#"><img src="img/IMG_1982.jpg" alt="image"></a> 
                                 <a href="#"><p>Дом на Учебной, г. Конаково</p></a> 
                             </div>
-                            <div class="projects-item col-6">
+                            <div class="projects-item col-sm-6 col-12">
                                 <a href="#"><img src="img/12.jpg" alt="image"></a> 
                                 <a href="#"><p>Коттеджный поселок Ольгино, г. Конаково</p></a> 
                             </div>
-                            <div class="projects-item col-6">
+                            <div class="projects-item col-sm-6 col-12">
                                 <a href="#"><img src="img/4.jpg" alt="image"></a> 
                                 <a href="#"><p>Коттеджный поселок Ричмонд, Рублево-Успенское шоссе</p></a> 
                             </div>
@@ -524,21 +399,21 @@
                 </div>
             </div>
         </section>
-        <section class="pay-method">
+        <section class="pay-method" id="pay">
             <div class="container">
                 <h2>Способы покупки</h2>
                 <div class="row pay-block">
-                    <div class="pay-item col-4">
+                    <div class="pay-item col-12 col-md-4">
                         <img src="icons/check-mark_1.svg" width="40" alt="icon"> 
                         <p>ИПОТЕКА</p>
                         <p>Квартиры в ЖК «Белый аист» можно оформить в ипотеку, или использовать Жилищный сертификат</p>
                     </div>
-                    <div class="pay-item col-4">
+                    <div class="pay-item col-12 col-md-4">
                         <img src="icons/check-mark_1.svg" width="40" alt="icon"> 
                         <p>РАССРОЧКА</p>
                         <p>Не хотите покупать в ипотеку? Мы пойдём Вам навстречу, предложив беспроцентную рассрочку на срок 1 год без каких-либо подводных камней</p>
                     </div>
-                    <div class="pay-item col-4">
+                    <div class="pay-item col-12 col-md-4 ">
                         <img src="icons/check-mark_1.svg" width="40" alt="icon"> 
                         <p>МАТКАПИТАЛ</p>
                         <p>Все квартиры от застройщика можно приобрести с использованием материнского капитала</p>
@@ -552,12 +427,12 @@
                     <div class="sale-item_1 col-12">
                         <p>АКЦИЯ – ДО <span>31.03.2020г.</span></p>
                     </div>
-                    <div class="sale-item_2 col-6">
+                    <div class="sale-item_2 col-12 col-md-6">
                         <p>2-8 этажи</p>
                         <p>35 000 руб. за 1 квадратный метр!</p>
                     </div>
-                    <div class="sale-item_3 col-6">
-                        <button class="">Получить консультацию</button>
+                    <div class="sale-item_3 col-12 col-md-6">
+                        <button class="" data-toggle="modal" data-target="#exampleModalCenter">Получить консультацию</button>
                     </div>
                 </div>
             </div>
@@ -566,16 +441,16 @@
             <div class="container">
                 <h2>Документация</h2>
                 <div class="row documents-block">
-                    <div class="documents-item col-3">
+                    <div class="documents-item col-12 col-lg-3 col-sm-6">
                         <img src="img/Svidetelstvo-1.webp" alt="image">
                     </div>
-                    <div class="documents-item col-3">
+                    <div class="documents-item col-12 col-lg-3 col-sm-6">
                         <img src="img/address-1.webp" alt="image">
                     </div>
-                    <div class="documents-item col-3">
+                    <div class="documents-item col-12 col-lg-3 col-sm-6">
                         <img src="img/vvod2-1.jpg" alt="image">
                     </div>
-                    <div class="documents-item col-3">
+                    <div class="documents-item col-12 col-lg-3 col-sm-6">
                         <img src="img/vvod1.webp" alt="image">
                     </div>                                                            
                 </div>
@@ -583,10 +458,10 @@
         </section>
         <section class="contacts">
             <div class="row">
-                <div class="col-6 map">
+                <div class="col-12 col-md-6 map">
                     <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A9e681732f75432bd9667fba304af4e1997ffc7988926a471deccc2fe06d4e29c&amp;source=constructor" width="100%" height="100%" frameborder="0"></iframe>
                 </div>
-                <div class="col-6 map-info">
+                <div class="col-12 col-md-6 map-info">
                     <h2>Контакты</h2>
                     <div class="info-item">
                         <p>Телефон</p>
@@ -636,8 +511,29 @@
             </div>
         </div>
     </footer>
+<!-- Modal -->
+    <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <svg class="t-popup__close-icon" width="23px" height="23px" viewBox="0 0 23 23" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"> <g stroke="none" stroke-width="1" fill="#ffffff" fill-rule="evenodd"> <rect transform="translate(11.313708, 11.313708) rotate(-45.000000) translate(-11.313708, -11.313708) " x="10.3137085" y="-3.6862915" width="2" height="30"></rect> <rect transform="translate(11.313708, 11.313708) rotate(-315.000000) translate(-11.313708, -11.313708) " x="10.3137085" y="-3.6862915" width="2" height="30"></rect> </g> </svg>
+        </button>
+        <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-body">
+                <h2>У ВАС ЕСТЬ ВОПРОСЫ?</h2>
+                <p>Мы можем позвонить вам абсолютно бесплатно!</p>
+                <form action="" class="modal-form">
+                    <input type="text" placeholder="Введите ваше имя" name="name">
+                    <input type="text" placeholder="Введите ваш телефон" name="phoe">
+                    <button type="submit" >Получить консультацию</button>
+                </form>
+            </div>
+        </div>
+        </div>
+    </div>
+
     <script src="js/jquery-3.4.1.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
     <script src="js/slick.js"></script>
     <script src="js/main.js"></script>
 </body>
