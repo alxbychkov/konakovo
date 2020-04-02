@@ -42,13 +42,13 @@ var flats = [
         floor: '2-14',
         square: '57,8 м²',
         room:'1',
-        image:'typ_5.svg'
+        image:'typ_5.webp'
     },
     {
         floor: '2-14',
         square: '90,3 м²',
         room:'1',
-        image:'typ_6.svg'
+        image:'typ_6.webp'
     },
     {
         floor: '2-14',
@@ -84,7 +84,7 @@ var flats = [
         floor: '9-14',
         square: '91,7 м²',
         room:'2',
-        image:'typ_14.svg'
+        image:'typ_14.webp'
     }
 ];
 var num = 1;

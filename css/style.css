@@ -961,7 +961,7 @@ section.contacts {
 }
 .plan .navigation {
     position: absolute;
-    top: 50%;
+    top: 300px;
     left: 0;
     width: 100%;
     display: flex;
