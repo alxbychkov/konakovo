@@ -112,6 +112,8 @@ $('#etazhu').hover(
 
 $(document).ready(function(){
 
+    show_map();
+
     $('.gallery-magnific').magnificPopup({
         type: 'image',
         gallery:{
@@ -215,3 +217,24 @@ function slider() {
         picture.attr('src',`img/${flats[num-1].image}`);
     });  
 }
+
+function show_map() {
+    var $element = $('.documents');
+    let counter = 0;
+    var frame = '<iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A9e681732f75432bd9667fba304af4e1997ffc7988926a471deccc2fe06d4e29c&amp;source=constructor" width="100%" height="100%" frameborder="0"></iframe>';
+$(window).scroll(function() {
+  var scroll = $(window).scrollTop() + $(window).height();
+  //Если скролл до конца елемента
+  //var offset = $element.offset().top + $element.height();
+  //Если скролл до начала елемента
+  var offset = $element.offset().top
+ 
+  if (scroll > offset && counter == 0) {
+    $('.contacts').find('.map').append(frame);
+    counter = 1;
+  }
+});
+
+}
+
+ 
