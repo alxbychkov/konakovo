@@ -345,6 +345,7 @@ section.about_block h2 {
     .about_block .nav-tabs {
         flex-direction: column;
         align-items: center;
+        padding-right: 0;
     }
     .about_block .nav-tabs .nav-link {
         width: 100%;
@@ -787,7 +788,7 @@ section.about_block h2 {
 #sale {
     background-color: #ff3333;
     padding: 50px 0;
-    background-image: url(../img/photo-3-2.webp);
+    background-image: url(../img/photo-3-2.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: right;
@@ -924,7 +925,7 @@ section.contacts {
 @media screen and (max-width:768px) {
     .footer-block {
         flex-direction: column;
-        align-items: flex-start;
+        align-items: center;
         justify-content: center;
         margin: 0;
     }
@@ -1112,12 +1113,25 @@ section.contacts {
     }
 }
 @media screen and (max-width:580px) {
-    /* .logo-text,
+    .logo-text,
     .main-title,
-    .first-block-buttons, */
+    .first-block-buttons,
     section.about_block h2,
     .row {
         margin-left: 0;
+        margin-right: 0;
+    }
+    .main-title {
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    .main-title h1 {
+        font-size: 40px;
+    }
+    h2 {
+        font-size: 32px;
+    }
+    .main-title p img {
         margin-right: 0;
     }
     .logo {
@@ -1132,5 +1146,120 @@ section.contacts {
     .main-title p:first-of-type {
         flex-direction: column;
     }
+    .call_me {
+        padding-right: 0;
+    }
+    .about-box {
+        padding: 20px 15px;
+    }
+    .about-box h3 {
+        padding-left: 15px;
+    }
+    .about-box button {
+        width: 100%;
+    }
+    section:not(:nth-child(1)) {
+        padding: 45px 0;
+    }
+    .advantages-block {
+        margin-top: 20px;
+    }
+    .advantages-item {
+        padding: 15px;
+        margin-bottom: 0;
+    }
+    .send-form input,
+    .send-form button {
+        margin-right: 0;
+        width: 100%;
+    }
+    .p-high {
+        font-size: 23px;
+    }
+    .plan .slider-item_left .type {
+        margin-bottom: 0;
+    }
+    .plan .slider-item_left button {
+        margin-bottom: 35px;
+        width: 100%;
+        margin-top: 10px;
+    }
+    .plan .slider-item_left {
+        padding-right: 0;
+    }
+    .plan .navigation {
+        top: 450px;
+    }
+    .information-block {
+        margin-top: 30px;
+    }
+    .projects-item {
+        padding: 0;
+    }
+    .information-item .projects-item img {
+        width: 100%;
+        max-width: 100%;
+    }
+    #sale {
+        background-image: none;
+    }
+    .sale-item_1 p {
+        margin-bottom: 20px;
+    }
+    .sale-item_3 button {
+        width: 100%;
+    }
+    .documents-block {
+        margin-top: 40px;
+        justify-content: space-between;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        overflow: scroll;
+    }
+    .documents-item {
+        display: flex;
+        justify-content: center;
+    }
+    .documents-item img {
+        max-height: 367px;
+    }
+    section.about_block {
+        padding: 0;
+    }
+    section.contacts,
+    section.questions,
+    section.information,
+    section.pay-method {
+        padding-top: 0;
+    }
+    .contacts .map-info {
+        padding: 30px;
+    }
+    .map-info .info-item {
+        margin-bottom: 20px;
+    }
+    .contacts .map-info h2 {
+        margin-bottom: 30px;
+    }
+    .questions .form {
+        margin-top: 20px;
+    }
+    .modal-body {
+        padding: 20px;
+    }
+    .modal-body h2 {
+        font-size: 30px;
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+    .modal-body p {
+        padding: 0;
+    }
+}
+section.form-backcall input::placeholder {
+    color: rgba(255, 255, 255, .5);
+}
+section.form-backcall input {
+    color: #ffffff;
 }
 

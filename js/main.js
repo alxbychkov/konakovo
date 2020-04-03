@@ -18,73 +18,85 @@ var flats = [
         floor: '2-9',
         square: '91,2 м²',
         room:'2',
-        image:'typ_1.webp'
+        image:'typ_1.webp',
+        image_jpg:'typ_1.jpg'
     },
     {
         floor: '12 и 14',
         square: '59,3 м²',
         room:'1',
-        image:'typ_2.webp'
+        image:'typ_2.webp',
+        image_jpg:'typ_2.jpg'
     },
     {
         floor: '2-9',
         square: '80,3 м²',
         room:'2',
-        image:'typ_3.webp'
+        image:'typ_3.webp',
+        image_jpg:'typ_3.jpg'
     },
     {
         floor: '2-14',
         square: '55,6 м²',
         room:'1',
-        image:'typ_4.webp'
+        image:'typ_4.webp',
+        image_jpg:'typ_4.jpg'
     },
     {
         floor: '2-14',
         square: '57,8 м²',
         room:'1',
-        image:'typ_5.webp'
+        image:'typ_5.webp',
+        image_jpg:'typ_5.jpg'      
     },
     {
         floor: '2-14',
         square: '90,3 м²',
         room:'1',
-        image:'typ_6.webp'
+        image:'typ_6.webp',
+        image_jpg:'typ_6.jpg'
     },
     {
         floor: '2-14',
         square: '48,2 м²',
         room:'1',
-        image:'typ_7.webp'
+        image:'typ_7.webp',
+        image_jpg:'typ_7.jpg'
     },
     {
         floor: '2-8',
         square: '109,1 м²',
         room:'3',
-        image:'typ_8.webp'
+        image:'typ_8.webp',
+        image_jpg:'typ_8.jpg'
     },
     {
         floor: '2-8',
         square: '116,2 м²',
         room:'3',
-        image:'typ_9.webp'
+        image:'typ_9.webp',
+        image_jpg:'typ_9.jpg'
     },
     {
         floor: '2-14',
         square: '83,3 м²',
         room:'2',
-        image:'typ_10.webp'
+        image:'typ_10.webp',
+        image_jpg:'typ_10.jpg'
     },
     {
         floor: '9-14',
         square: '51 м²',
         room:'1',
-        image:'typ_13.webp'
+        image:'typ_13.webp',
+        image_jpg:'typ_13.jpg'
     },
     {
         floor: '9-14',
         square: '91,7 м²',
         room:'2',
-        image:'typ_14.webp'
+        image:'typ_14.webp',
+        image_jpg:'typ_14.jpg'
     }
 ];
 var num = 1;
@@ -112,6 +124,7 @@ $('#etazhu').hover(
 
 $(document).ready(function(){
 
+    $("input[name=phone]").inputmask("+7 (999) 999-99-99");
     show_map();
 
     $('.gallery-magnific').magnificPopup({
@@ -202,7 +215,7 @@ function slider() {
             floor.text(`Этажи: ${flats[num-1].floor}`);
             square.text(`Общая площадь: ${flats[num-1].square}`);
             room.text(`Количество комнат: ${flats[num-1].room}`);
-            picture.attr('src',`img/${flats[num-1].image}`);
+            picture.attr('src',`img/${flats[num-1].image_jpg}`);
     });
     next.on('click',function(){
         if (num == length) {
@@ -214,7 +227,7 @@ function slider() {
         floor.text(`Этажи: ${flats[num-1].floor}`);
         square.text(`Общая площадь: ${flats[num-1].square}`);
         room.text(`Количество комнат: ${flats[num-1].room}`);
-        picture.attr('src',`img/${flats[num-1].image}`);
+        picture.attr('src',`img/${flats[num-1].image_jpg}`);
     });  
 }
 
