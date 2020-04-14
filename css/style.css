@@ -1307,6 +1307,38 @@ section.fix-banner .container {
     border: none;
     outline: none !important;
 }
+.modal-date {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.modal-date span {
+    font-size: 20px;
+    line-height: 1.55;
+    font-weight: 300;
+    color: #383838;
+    margin-bottom: 10px;
+}
+.modal-form input[type=date] {
+    color: #262626;
+    background-color: #f2f2f2;
+    border-radius: 200px;
+    -moz-border-radius: 200px;
+    -webkit-border-radius: 200px;
+    margin: 0 0 15px 0;
+    height: 60px;
+    padding: 0 20px;
+    font-size: 16px;
+    line-height: 1.33;
+    width: 50%;
+    border: 0 none;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    outline: none;
+    -webkit-appearance: none;
+}
+
 @media screen and (max-width:1010px) {
     section.fix-banner {
         position: relative;
